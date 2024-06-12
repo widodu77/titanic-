@@ -1,5 +1,4 @@
 
-
 # Titanic Data Analysis and Prediction
 
 This project provides several functionalities to analyze the Titanic dataset and predict the survival of passengers using a Random Forest Classifier. The functionalities include viewing the dataset, preprocessing the data, understanding correlations, evaluating the AI model, and predicting survival for new passenger data.
@@ -124,3 +123,4 @@ Ensure the Titanic dataset (`titanic.csv`) is located at `C:\\Users\\walid\\OneD
 ## Contact
 
 For any issues or inquiries, please contact walid.ajbar@student-cs.fr and/or arthur.de-leusse@student-cs.fr
+
