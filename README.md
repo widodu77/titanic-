@@ -1,4 +1,4 @@
-Sure, here's a README for the provided code:
+
 
 # Titanic Data Analysis and Prediction
 
@@ -123,4 +123,4 @@ Ensure the Titanic dataset (`titanic.csv`) is located at `C:\\Users\\walid\\OneD
 
 ## Contact
 
-For any issues or inquiries, please contact walid.ajbar@student-cs.fr
+For any issues or inquiries, please contact walid.ajbar@student-cs.fr and/or arthur.de-leusse@student-cs.fr
