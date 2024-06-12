@@ -6,23 +6,24 @@ from sklearn.ensemble import RandomForestClassifier
 from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score, classification_report
 
+path = 'titanic.csv'
 # Task 1: Display the first five rows of the Titanic dataset
 def task1():
-    df = pd.read_csv('C:\\Users\\walid\\OneDrive\\Desktop\\titanic--main\\titanic--main\\titanic.csv')
+    df = pd.read_csv(path)
     print(df.head())
 
 # Task 2
 
 # a: Convert categorical values (Sex and Embarked) to numerical values
 def task2a():
-    df = pd.read_csv('C:\\Users\\walid\\OneDrive\\Desktop\\titanic--main\\titanic--main\\titanic.csv')
+    df = pd.read_csv(path)
     df['Sex'] = df['Sex'].map({'male': 0, 'female': 1})
     df['Embarked'] = df['Embarked'].map({'C': 0, 'Q': 1, 'S': 2})
     print(df[['Sex', 'Embarked']].head())
 
 # b: Fill missing values in Age, Fare, and Embarked columns with their respective means
 def task2b():
-    df = pd.read_csv('C:\\Users\\walid\\OneDrive\\Desktop\\titanic--main\\titanic--main\\titanic.csv')
+    df = pd.read_csv(path)
     df['Sex'] = df['Sex'].map({'male': 0, 'female': 1})
     df['Embarked'] = df['Embarked'].map({'C': 0, 'Q': 1, 'S': 2})
     df = df.fillna({'Age': df['Age'].mean(), 'Fare': df['Fare'].mean(), 'Embarked': df['Embarked'].mean()})
@@ -32,7 +33,7 @@ def task2b():
 
 # a: Display correlation matrix and heatmap
 def task3a():
-    df = pd.read_csv('C:\\Users\\walid\\OneDrive\\Desktop\\titanic--main\\titanic--main\\titanic.csv')
+    df = pd.read_csv(path)
     df['Sex'] = df['Sex'].map({'male': 0, 'female': 1})
     df['Embarked'] = df['Embarked'].map({'C': 0, 'Q': 1, 'S': 2})
     df = df.fillna({'Age': df['Age'].mean(), 'Fare': df['Fare'].mean(), 'Embarked': df['Embarked'].mean()})
@@ -50,7 +51,7 @@ def task3a():
 
 # Function to train a Random Forest Classifier and evaluate its performance
 def forest():
-    df = pd.read_csv('C:\\Users\\walid\\OneDrive\\Desktop\\titanic--main\\titanic--main\\titanic.csv')
+    df = pd.read_csv(path)
     df['Sex'] = df['Sex'].map({'male': 0, 'female': 1})
     df['Embarked'] = df['Embarked'].map({'C': 0, 'Q': 1, 'S': 2})
     df = df.fillna({'Age': df['Age'].mean(), 'Fare': df['Fare'].mean(), 'Embarked': df['Embarked'].mean()})
@@ -88,7 +89,7 @@ def forest():
 
 # Function to preprocess new passenger data
 def prediction_new_passenger(data):
-    df = pd.read_csv('C:\\Users\\walid\\OneDrive\\Desktop\\titanic--main\\titanic--main\\titanic.csv')
+    df = pd.read_csv(path)
     df['Sex'] = df['Sex'].map({'male': 0, 'female': 1})
     df['Embarked'] = df['Embarked'].map({'C': 0, 'Q': 1, 'S': 2})
     df = df.fillna({'Age': df['Age'].mean(), 'Fare': df['Fare'].mean(), 'Embarked': df['Embarked'].mean()})
